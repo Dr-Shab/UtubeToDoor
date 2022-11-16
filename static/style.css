@@ -1,0 +1,139 @@
+body {
+    background-color: #d5def5;
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 15px;
+}
+form {
+    background-color: white;
+    border: 5px solid #f1f1f1;
+}
+.banner {
+    display:grid;
+    grid-template-column: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 300px;
+}
+.banner2 {
+    height: 300px;
+}
+.left {
+    grid-column: 1;
+    grid-row:2/3;
+    padding:30px;
+}
+.right {
+    grid-column: 3;
+    grid-row:2/3;
+    padding:30px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 16px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input::placeholder{
+    opacity:0.5;
+}
+.icon {
+    font-size: 110px;
+    display: flex;
+    justify-content: center;
+    color: #4286f4;
+    clip-path: circle();
+    grid-column: 2;
+    grid-row:2;
+}
+.description {
+    text-align: center;
+    margin: auto;
+    grid-column: 2;
+    grid-row:3;
+    padding:20px;
+}
+button {
+    background-color: #4286f4;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 0;
+    border: none;
+    cursor: grab;
+    width: 48%;
+}
+h1 {
+    text-align:center;
+    font-size:50px;
+    grid-column: 2;
+    grid-row:1;
+    padding:0px;
+    margin:auto;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.formcontainer {
+    text-align: center;
+    margin: 24px 50px 12px;
+}
+.container {
+    padding: 16px 0;
+    text-align:left;
+}
+
+span.psw {
+    float: right;
+    padding-top: 0;
+    padding-right: 15px;
+}
+nav ul {
+
+   list-style-type:none;
+   margin:auto;
+   padding:20px;
+   color: white;
+
+}
+nav ul li{
+
+   background-color: #4286f4;
+   width:100%;
+   text-align:center;
+   line-height:50px;
+   color: white;
+
+}
+nav ul li a{
+
+   text-decoration:none;
+   color:white;
+   display: block;
+
+}
+#af:hover{
+    background-color: #e7eaf6;
+}
+#man:hover{
+    background-color: #a2a8d3;
+}
+#re:hover{
+    background-color: #38598b;
+}
+#sur:hover{
+    background-color: #113f67;
+}
+.files{
+    padding:50px;
+    text-align:top;
+}
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+    display: block;
+    float: none;
+}
+

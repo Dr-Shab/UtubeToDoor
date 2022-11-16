@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <title>Audio Loader</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <form>
+      <div class="banner2">
+        <h1>AuLo</h1>
+        <div class="icon">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSriRA16XEZMHXrQWYoryTubxRp7pGs2MigT2fSzbOU50WOgrkS68onmnkzGlR3Ft63Bkk&usqp=CAU" alt="technology" >
+        </div>
+        <div class="description">
+          <article>
+            "One of the most advanced audio loader on the market" - Gill Bates
+          </article>
+        </div>
+      </div>
+      <div class="formcontainer">
+        <article>
+          You requested a {{ length }} seconds long audio snippet <br> from <br> {{ url }} <br> to be saved as <br>
+          {{ songname }} <br>
+          here u see if it worked: <br><br>
+          {{ output }}
+        </article>
+        <button type="button" onclick="history.back()" >Back</button>
+      </div>
+    </form>
+  </body>
+</html>

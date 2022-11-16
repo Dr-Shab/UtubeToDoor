@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+  <title>Audio Loader</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <form action="{{ url_for("letsgo")}}" method="post">
+      <div class="banner">
+        <h1>AuLo</h1>
+        <div class="left">
+          <nav>
+                <ul>
+                  <li id="af"><a href="/audiofiles"> Audio files </a> </li>
+                  <br>
+                  <br>
+                  <li id="man"><a href="/manual"> Manual </a>  </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+          <nav>
+                <ul>
+                  <li id="re"><a href="/restart"> Restart door </a>  </li>
+                  <br>
+                  <br>
+                  <li id="sur"><a href="/surprise"> Surprise </a>  </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="icon">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSriRA16XEZMHXrQWYoryTubxRp7pGs2MigT2fSzbOU50WOgrkS68onmnkzGlR3Ft63Bkk&usqp=CAU" alt="technology" >
+        </div>
+        <div class="description">
+          <article>
+            "One of the most advanced audio loader on the market" - Gill Bates
+          </article>
+        </div>
+      </div>
+      <div class="formcontainer">
+          <div class="container">
+            <label for="songname"><strong>Song name</strong></label>
+            <input type="text" placeholder="Extreme Fart Sound" name="songname" title="Enter a name for the audio file" required>
+
+            <label for="sharelink"><strong>URL</strong></label>
+            <input type="text" placeholder="https://youtu.be/dZLR6241kpM" name="sharelink" title="Favourably the share link (only youtube allowed)" required>
+
+            <label for="starttime"><strong>Start time</strong></label>
+            <input type="text" placeholder="5" name="starttime" title="Start time of the audio sequence in seconds" required>
+
+            <label for="endtime"><strong>End time</strong></label>
+            <input type="text" placeholder="13" name="endtime" title="End time of the audio sequence in seconds" required>
+          </div>
+
+          <button type="submit"><strong>Let's Go</strong></button>
+      </div>
+    </form>
+  </body>
+</html>
