@@ -1,2 +1,2 @@
 # UtubeToDoor
-UI to download and automatically cut audio tracks from youtube videos 
+Simple Web Interface for downloading and managing your sounds
